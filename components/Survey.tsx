@@ -8,15 +8,10 @@ import SidebarLeft from './ui/SidebarLeft';
 import SidebarRight from './ui/SidebarRight';
 import { Forms } from 'types';
 
-interface Props {
-  forms: Forms[];
-}
 
-export default function Survey({ forms }: Props) {
+export default function Survey() {
   const router = useRouter();
   const { user, isLoading, subscription } = useUser();
-
-  console.log(forms)
 
   return (
     <section className="bg-green2 min-h-screen">
